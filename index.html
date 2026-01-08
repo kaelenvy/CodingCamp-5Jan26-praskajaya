@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List - Jaya</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text font-bold text-2xl">Todo List Website - Jaya</h1>
+    </header>
+
+    <main>
+        <section>
+            <form>
+                <!-- todo input field -->
+                <input class="border rounded p-2" type="text" id="todo-input" placeholder="Enter a new todo item">
+                <!-- date input field -->
+                <input class="border rounded p-2" type="date" id="todo-date" placeholder="Enter due date">
+            </form>
+            <!-- Add button -->
+            <button onclick="addTodo()" class="bg-green-500 hover:bg-green-500 text-white font-bold py-2 px-4 rounded" type="button">Add Todo</button>
+        </section>
+
+        <section class="flex pt-2 justify-between">
+            <!-- button to clear all todos -->
+            <button onclick="removeAllTodo()" class="border rounded p-2 bg-red-500 text-white">Clear All Todos</button>
+
+            <!-- button to filter todos -->
+            <button class="border rounded p-2 bg-blue-500 text-white">Filter Todos</button>
+        </section>
+        
+        <section class="pt-2">
+            <header>
+                <h1 class="text-2xl font-semibold">Todo List</h1>
+            </header>
+
+            <ul class="pt-2" id="todo-list">
+                <!-- todo items will be appended here -->
+                 <li>No Todos available</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center pt-4">© 2026 Todo List - Jaya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

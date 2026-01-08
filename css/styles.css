@@ -1,4 +1,5 @@
-<body="justify-items: center;
+body {
+    justify-items: center;
     align-content: center;
     height: 100vh;
-    ;">
+}    
