@@ -93,7 +93,7 @@ function renderTodos() {
     });
 }
 
-// Toggle completed
+// Toggle completedd
 function toggleComplete(index) {
     todos[index].completed = !todos[index].completed;
     renderTodos();
